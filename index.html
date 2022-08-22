@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FIFA - DREAM TEAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="d-flex align-items-center">
+        <div class="container text text-center">
+            <h1 class="fw-bolder display-3 text-orange mb-3">CREATE YOUR DREAM TEAM</h1>
+            <p class="w-75 mx-auto text-light">Football, a game that brutally tests the minds and bodies of even its
+                strongest
+                players, brings forth
+                many lessons about the importance of perseverance, dedication and hard work.As a result, some of the
+                best and most inspirational quotes come from football minds, players and coaches</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-body" class="container">
+            <div class="row">
+                <div class="col-6 col-md-7 col-lg-9">
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-white">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player -1.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Lionel Messi</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player-2.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Neymar Jr</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player-3.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Kylian Mbappé</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player-4.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Vítor Machado</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player-5.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Sergio Ramos</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/player/player-6.png" class="card-img-top w-100" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Renato Sanches</h5>
+                                    <button class="btn btn-primary ">Select Player</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-5 col-lg-3">
+
+                    <div class="box mx-2 bg-black px-2 py-4 text-light mb-5 rounded">
+                        <div class="box-heading text-center text-orange">
+                            <h2>Selected Player</h2>
+                        </div>
+                        <ol>
+                            <li>PLayer-1</li>
+                            <li>PLayer-2</li>
+                            <li>PLayer-3</li>
+                            <li>PLayer-4</li>
+                            <li>PLayer-5</li>
+                        </ol>
+
+                    </div>
+                    <div class="box mx-2 bg-black px-2 py-4 text-light">
+                        <div class="box-heading text-center text-orange mb-3 rounded">
+                            <h2>Budget</h2>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="exampleFormControlInput1" class="form-label">Per Player</label>
+                            <input type="text" class="form-control mb-3" id="input1" value="1000">
+                            <button class="btn btn-primary">Calculate</button>
+                            <p class="mt-4">player Expense - $<span>5000</span></p>
+                        </div>
+                        <div class="mb-5">
+
+                            <label for="exampleFormControlInput1" class="form-label">Expense for Manager</label>
+                            <input type="text" class="form-control mb-3" id="input1" value="2000">
+                            <label for="exampleFormControlInput1" class="form-label">Expense for Coach</label>
+                            <input type="text" class="form-control mb-3" id="input1" value="4000">
+                            <button class="btn btn-primary">Calculate Total</button>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="text">Total</div>
+                            <div class="Amount text-orange">$ <span class=" fw-bold">11000</span></div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
