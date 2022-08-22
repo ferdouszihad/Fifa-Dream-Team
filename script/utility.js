@@ -52,7 +52,7 @@ function checkInputError(inputID) {
 
     if (isNaN(inputID.value) || inputID.value <= 0 || inputID.value.trim().length == 0) {
         inputID.value = "";
-        alert("Value Cannot be a String or less then zero or empty");
+        alert("Insert a Valid Positive Number");
 
         return true;
 

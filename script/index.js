@@ -27,7 +27,7 @@ document.getElementById('calculate-player-btn').addEventListener('click', functi
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
 
-    if (checkInputError(expense) == true || checkInputError(manager) == true || checkInputError(coach) == true) {
+    if (checkInputError(manager) == true || checkInputError(coach) == true) {
 
     } else {
         let listLength = getListLength();
