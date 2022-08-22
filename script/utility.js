@@ -45,6 +45,7 @@ function addToList(playerName, btn) {
 }
 
 function checkInputError(inputID) {
+
     if (isNaN(inputID.value) || inputID.value <= 0 || inputID.value.trim().length == 0) {
         inputID.value = "";
         alert("Value Cannot be a String or less then zero or empty");
@@ -55,55 +56,3 @@ function checkInputError(inputID) {
     }
 
 }
-
-
-buttons = document.getElementsByClassName('btn');
-for (let btn of buttons) {
-
-    btn.addEventListener('click', function (event) {
-        let parents = event.target.parentNode;
-        let titles = parents.getElementsByClassName('card-title');
-        for (let name of titles) {
-            addToList(name.innerText, btn);
-        }
-
-
-
-    })
-
-
-}
-
-document.getElementById('calculate-player-btn').addEventListener('click', function () {
-    let expense = document.getElementById('input-player-expense');
-
-    if (!checkInputError(expense)) {
-        let listLength = getListLength();
-        calculatePlayerExpense(listLength);
-
-    }
-
-
-
-})
-
-document.getElementById('calculate-total-btn').addEventListener('click', function () {
-
-
-
-
-    if (!checkInputError(expense) && !checkInputError(coach) && !checkInputError(manager)) {
-        let listLength = getListLength();
-        calculatePlayerExpense(listLength);
-
-    }
-
-
-
-
-
-    let listLength = getListLength();
-    calculateTotal(listLength);
-
-
-})
