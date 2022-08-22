@@ -12,7 +12,7 @@ function calculateTotal(listLength) {
     let expense = document.getElementById('input-player-expense');
     let manager = document.getElementById('manager-expense');
     let coach = document.getElementById('coach-expense');
-    playerExpense.innerText = listLength * parseInt(expense.value);
+    // playerExpense.innerText = listLength * parseInt(expense.value);
     document.getElementById('total').innerText = parseInt(playerExpense.innerText) + parseInt(manager.value) + parseInt(coach.value);
 
 }
