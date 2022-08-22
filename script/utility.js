@@ -26,6 +26,8 @@ function getListLength() {
 function addToList(playerName, btn) {
     const list = document.createElement('li');
     list.innerText = playerName;
+    list.style.paddingTop = '20px';
+    list.style.borderBottom = '1px solid gray';
     let playerList = document.getElementById('player-list');
     let listLength = playerList.childNodes.length;
 
@@ -37,6 +39,7 @@ function addToList(playerName, btn) {
         document.getElementById('list-msg').style.display = 'none';
         playerList.append(list);
         btn.setAttribute('disabled', '');
+        btn.style.background = "#ddd";
         btn.innerText = "Player Selected";
 
 
@@ -49,7 +52,6 @@ function checkInputError(inputID) {
     if (isNaN(inputID.value) || inputID.value <= 0 || inputID.value.trim().length == 0) {
         inputID.value = "";
         alert("Value Cannot be a String or less then zero or empty");
-
 
         return true;
 

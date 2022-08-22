@@ -15,6 +15,7 @@ let manager = document.getElementById('manager-expense');
 let coach = document.getElementById('coach-expense');
 
 document.getElementById('calculate-player-btn').addEventListener('click', function () {
+
     if (getListLength() == 0) {
         alert("Please Select some Player first");
 
