@@ -16,7 +16,7 @@ header{
     color:orange;
 }
 
-main{
+main , footer{
     background-color: #151515;
 }
 .card{
