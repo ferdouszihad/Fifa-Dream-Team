@@ -40,6 +40,7 @@ function addToList(playerName, btn) {
         playerList.append(list);
         btn.setAttribute('disabled', '');
         btn.style.background = "#ddd";
+        btn.style.color = "#151515";
         btn.innerText = "Player Selected";
 
 
