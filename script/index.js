@@ -19,7 +19,9 @@ document.getElementById('calculate-player-btn').addEventListener('click', functi
     if (getListLength() == 0) {
         alert("Please Select some Player first");
 
-    } else if (!checkInputError(expense)) {
+    } else if (checkInputError(expense) == true) {
+        expense.value = '';
+    } else {
         let listLength = getListLength();
         calculatePlayerExpense(listLength);
     }
@@ -27,7 +29,12 @@ document.getElementById('calculate-player-btn').addEventListener('click', functi
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
 
+
+
     if (checkInputError(manager) == true || checkInputError(coach) == true) {
+        if (isNaN(coach.value) || coach.value < 0) coach.value = '';
+        if (isNaN(manager.value) || manager.value < 0) manager.value = '';
+        manager.value = '';
 
     } else {
         let listLength = getListLength();

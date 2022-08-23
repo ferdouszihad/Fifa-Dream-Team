@@ -35,3 +35,7 @@ button{
     border-bottom: 1px solid #ddd;
     color:red;
 }
+.w-60{
+    max-width: 60%;
+
+}
