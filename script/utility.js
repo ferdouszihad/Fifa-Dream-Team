@@ -1,19 +1,30 @@
+function getFloat(value) {
+
+    let m = parseFloat(value).toFixed(2);
+    return parseFloat(m);
+
+}
+
 function calculatePlayerExpense(listLength) {
     let playerExpense = document.getElementById('player-expense');
     let expense = document.getElementById('input-player-expense');
-    playerExpense.innerText = listLength * parseInt(expense.value);
-    return listLength * parseInt(expense.value);
+    playerExpense.innerText = (listLength * getFloat(expense.value)).toFixed(2);
+
+    return listLength * getFloat(expense.value);
 
 
 }
 
 function calculateTotal(listLength) {
     let playerExpense = document.getElementById('player-expense');
-    let expense = document.getElementById('input-player-expense');
+    //let expense = document.getElementById('input-player-expense');
     let manager = document.getElementById('manager-expense');
     let coach = document.getElementById('coach-expense');
     // playerExpense.innerText = listLength * parseInt(expense.value);
-    document.getElementById('total').innerText = parseInt(playerExpense.innerText) + parseInt(manager.value) + parseInt(coach.value);
+    let sum = getFloat(playerExpense.innerText) + getFloat(manager.value) + getFloat(coach.value);
+    document.getElementById('total').innerText = sum.toFixed(2);
+
+
 
 }
 
@@ -41,6 +52,7 @@ function addToList(playerName, btn) {
         btn.setAttribute('disabled', '');
         btn.style.background = "#ddd";
         btn.style.color = "#151515";
+        btn.style.fontWeight = 'bold';
         btn.innerText = "Player Selected";
 
 
@@ -50,7 +62,7 @@ function addToList(playerName, btn) {
 
 function checkInputError(inputID) {
 
-    if (isNaN(inputID.value) || inputID.value <= 0 || inputID.value.trim().length == 0) {
+    if (isNaN(inputID.value) || inputID.value < 0 || inputID.value.trim().length == 0) {
         inputID.value = "";
         alert("Insert a Valid Positive Number");
 
